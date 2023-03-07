@@ -170,12 +170,12 @@ def valorizador(id_inmueble,inputvar={},currency='COP',currencycal=1):
         longitud  = inputvar['longitud']
         
         if 'venta' in tiponegocio.lower():
-            filename    = '/data\data_market_venta_bogota'
+            filename    = 'data/data_market_venta_bogota'
             vardep      = 'valorventa'
             varforecast = 'forecast_venta'
         
         if 'arriendo' in tiponegocio.lower():
-            filename    = '/data\data_market_arriendo_bogota'
+            filename    = 'data/data_market_arriendo_bogota'
             vardep      = 'valorarriendo'
             varforecast = 'forecast_arriendo'
         
