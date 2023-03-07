@@ -252,7 +252,7 @@ def valorizador(id_inmueble,inputvar={},currency='COP',currencycal=1):
             if isinstance(inmueble['imagen_principal'], str) and len(inmueble['imagen_principal'])>20: imagen_principal =  inmueble['imagen_principal']
             else: imagen_principal = "https://personal-data-bucket-online.s3.us-east-2.amazonaws.com/sin_imagen.png"
             propertyinfo = f'<strong>{inmueble["areaconstruida"]}</strong> mt<sup>2</sup> | <strong>{int(inmueble["habitaciones"])}</strong> hab | <strong>{int(inmueble["banos"])}</strong> baños | <strong>{int(inmueble["garajes"])}</strong> pq'
-            url_export   = f"http://localhost:8501/Ficha?idcodigo={inmueble['code']}&tiponegocio={tiponegocio}"
+            url_export   = f"https://buydepa-daily-report-online.streamlit.app/Ficha?idcodigo={inmueble['code']}&tiponegocio={tiponegocio}"
             if isinstance(inmueble['direccion'], str): direccion = inmueble['direccion'][0:35]
             else: direccion = ''
             string_popup = f'''              
@@ -288,7 +288,7 @@ def valorizador(id_inmueble,inputvar={},currency='COP',currencycal=1):
             if isinstance(inmueble['imagen_principal'], str) and len(inmueble['imagen_principal'])>20: imagen_principal =  inmueble['imagen_principal']
             else: imagen_principal = "https://personal-data-bucket-online.s3.us-east-2.amazonaws.com/sin_imagen.png"
             propertyinfo = f'<strong>{inmueble["areaconstruida"]}</strong> mt<sup>2</sup> | <strong>{int(inmueble["habitaciones"])}</strong> hab | <strong>{int(inmueble["banos"])}</strong> baños | <strong>{int(inmueble["garajes"])}</strong> pq'
-            url_export   = f"http://localhost:8501/Ficha?idcodigo={inmueble['code']}&tiponegocio={tiponegocio}"
+            url_export   = f"https://buydepa-daily-report-online.streamlit.app/Ficha?idcodigo={inmueble['code']}&tiponegocio={tiponegocio}"
             if isinstance(inmueble['direccion'], str): direccion = inmueble['direccion'][0:35]
             else: direccion = ''
             imagenes += f'''    
