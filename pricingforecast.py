@@ -18,9 +18,11 @@ def pricingforecast(inputvar):
     
     tiponegocio  = inputvar['tiponegocio']
     if 'venta' in tiponegocio.lower() or 'sell' in tiponegocio.lower():
-        filename = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\ANN_bogota_venta_apartamento'
+        #filename = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\ANN_bogota_venta_apartamento'
+        filename = 'data/ANN_bogota_venta_apartamento'
     if 'arriendo' in tiponegocio.lower() or 'rent' in tiponegocio.lower():
-        filename = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\ANN_bogota_arriendo_apartamento'
+        #filename = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\ANN_bogota_arriendo_apartamento'
+        filename = 'data/ANN_bogota_arriendo_apartamento'
 
     delta         = 0
     salida        = datamodelo(filename)

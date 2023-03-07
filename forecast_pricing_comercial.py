@@ -102,16 +102,16 @@ def forecast_pricing_comercial(inputvar):
     
     if scacodigo is not None and scacodigo!='':
         if 'venta' in tiponegocio.lower():
-            filename_barrio = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_barrio_venta_bogota'
-            filename_oferta = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_market_venta_bogota'            
-            #filename_barrio = 'data/data_barrio_venta_bogota'
-            #filename_oferta = 'data/data_market_venta_bogota'
+            #filename_barrio = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_barrio_venta_bogota'
+            #filename_oferta = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_market_venta_bogota'            
+            filename_barrio = 'data/data_barrio_venta_bogota'
+            filename_oferta = 'data/data_market_venta_bogota'
 
         if 'arriendo' in tiponegocio.lower():
-            filename_barrio = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_barrio_arriendo_bogota'
-            filename_oferta = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_market_arriendo_bogota'
-            #filename_barrio = 'data/data_barrio_arriendo_bogota'
-            #filename_oferta = 'data/data_market_arriendo_bogota'
+            #filename_barrio = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_barrio_arriendo_bogota'
+            #filename_oferta = r'D:\Dropbox\Empresa\Buydepa\COLOMBIA\DESARROLLO\daily-report\data\data_market_arriendo_bogota'
+            filename_barrio = 'data/data_barrio_arriendo_bogota'
+            filename_oferta = 'data/data_market_arriendo_bogota'
 
         forecastlist = {'forecast_barrio':None,
                         'forecast_barrio_complemento':None,
