@@ -4,8 +4,6 @@ import json
 import pandas as pd
 from bs4 import BeautifulSoup
 
-import sys
-sys.path.insert(0, '/scripts')
 from _valorizador import valorizador
 from datafunctions import inspeccion_visitas,getdatacatastro
 from coddir import coddir

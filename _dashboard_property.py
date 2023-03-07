@@ -8,8 +8,6 @@ import json
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-import sys
-sys.path.insert(0, '/scripts')
 from html_scripts import table1,table2,timelineproperty,html_estado_propiedad,imgpropertylist
 from datafunctions import propertydata,propertymanagementdata,followup,datadocumentos
 from _valorizador import valorizador

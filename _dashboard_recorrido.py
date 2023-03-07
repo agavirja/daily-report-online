@@ -6,8 +6,6 @@ import copy
 from streamlit_folium import st_folium
 from bs4 import BeautifulSoup
 
-import sys
-sys.path.insert(0, '/scripts')
 from datafunctions import datarecorridos
 from html_scripts import boxkpi,boxnumberpercentage
 from coddir import coddir

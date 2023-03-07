@@ -1,8 +1,7 @@
 import streamlit as st
 import copy
 
-import sys
-sys.path.insert(0, '/scripts')
+
 from datafunctions import inspeccion_callsample
 from currency import currencyoptions,getcurrency
 from _dashboard_comite import dashboard_comite

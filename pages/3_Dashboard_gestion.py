@@ -1,8 +1,7 @@
 import streamlit as st
 import copy
 
-import sys
-sys.path.insert(0, '/scripts')
+
 from datafunctions import propertydata
 from currency import currencyoptions,getcurrency
 from _dashboard_gestion_callcenter_inbound import dashboard_gestion_callcenter_inbound

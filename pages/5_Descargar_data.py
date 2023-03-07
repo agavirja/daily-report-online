@@ -14,8 +14,7 @@ from bs4 import BeautifulSoup
 from shapely.geometry import Polygon,Point
 from datetime import datetime
 
-import sys
-sys.path.insert(0, '/scripts')
+
 from currency import currencyoptions,getcurrency
 from datafunctions import propertydata,propertymanagementdata,followup,inspeccion_callsample,inspeccion_callhistory,inspeccion_seguimiento_ofertas,datadocumentos
 

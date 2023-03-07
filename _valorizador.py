@@ -15,8 +15,6 @@ from dateutil.relativedelta import relativedelta
 from sqlalchemy import create_engine
 from bs4 import BeautifulSoup
 
-import sys
-sys.path.insert(0, '/scripts')
 from forecast_pricing_comercial import forecast_pricing_comercial
 from datafunctions import propertydata,getdatamarketcoddir,getdatamarketsimilar
 

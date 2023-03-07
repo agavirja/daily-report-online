@@ -18,8 +18,7 @@ st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
 # https://pdfcrowd.com/pricing/api/?api=v2
 # https://pdfcrowd.com/user/account/stats/
 
-import sys
-sys.path.insert(0, '/scripts')
+
 from datafunctions import getdatamarketcoddir
 
 

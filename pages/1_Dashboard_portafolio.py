@@ -13,8 +13,6 @@ from bs4 import BeautifulSoup
 from shapely.geometry import Polygon,Point
 from datetime import datetime
 
-import sys
-sys.path.insert(0, '/scripts')
 from html_scripts import boxnumbermoney,boxkpi,table1
 from datafunctions import propertydata,propertymanagementdata,followup
 from currency import currencyoptions,getcurrency
