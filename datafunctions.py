@@ -51,7 +51,7 @@ def propertymanagementdata():
     datapaso['valor'] = datapaso['valor']-datapaso['valorcompra']
     
         # Restar del total de gasto los ingresos recibidos por el inmueble
-    datamerge = data[(data['tipo']=='INGRESO') & (~data['concepto'].isin(['INGRESO 1 (VENTA)','INGRESO 2 (VENTA)','INGRESO 3 (VENTA)','INGRESO ESCRITURAS (VENTA)']))]
+    datamerge = data[(data['tipo']=='INGRESO') & (~data['concepto'].isin(['INGRESO 1 (VENTA)','INGRESO 2 (VENTA)','INGRESO 3 (VENTA)','INGRESO 4 (VENTA)','INGRESO 5 (VENTA)','INGRESO 6 (VENTA)','INGRESO  6 (VENTA)','INGRESO ESCRITURAS (VENTA)']))]
     datamerge = datamerge.groupby(['id_inmueble','tipo'])['valor'].sum().reset_index()
     datamerge.rename(columns={'valor':'valoringreso'},inplace=True)
     datamerge['tipo'] = 'GASTO'
