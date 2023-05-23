@@ -160,7 +160,7 @@ for i in data['id_inmueble']:
     datapaso['id_inmueble'] = i
     datafinal = pd.concat([datafinal,datapaso])
 
-datafinal = datafinal[['id_inmueble','filename', 'filedate', 'urldocument']]
+#datafinal = datafinal[['id_inmueble','filename', 'filedate', 'urldocument']]
 datafinal.index = range(len(datafinal))
 dataexport = copy.deepcopy(datafinal)
 
