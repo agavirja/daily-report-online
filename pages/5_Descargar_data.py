@@ -158,8 +158,9 @@ for i in data['id_inmueble']:
         try: datapaso = datapaso.append(json.loads(data[data['id_inmueble']==i]['venta_relevantfiles'].iloc[0]))
         except: pass
     datapaso['id_inmueble'] = i
+    st.dataframe(datapaso)
     datafinal = pd.concat([datafinal,datapaso])
-st.dataframe(datafinal)
+
 
 #datafinal = datafinal[['id_inmueble','filename', 'filedate', 'urldocument']]
 datafinal.index = range(len(datafinal))
