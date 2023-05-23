@@ -148,7 +148,6 @@ with col1:
 st.write('---')
 st.markdown('<div style="background-color: #f2f2f2; border: 1px solid #fff; padding: 0px; margin-top: 5px; margin-bottom: 10px;"><h1 style="margin: 0; font-size: 18px; text-align: center; color: #3A5AFF;">Documentos de los inmuebles</h1></div>', unsafe_allow_html=True)
 data = datadocumentos()
-st.dataframe(data)
 if id_inmueble is not None: data = data[data['id_inmueble']==id_inmueble]
 data      = data.sort_values(by='id_inmueble',ascending=True)
 
@@ -160,6 +159,7 @@ for i in data['id_inmueble']:
         except: pass
     datapaso['id_inmueble'] = i
     datafinal = pd.concat([datafinal,datapaso])
+st.dataframe(datafinal)
 
 #datafinal = datafinal[['id_inmueble','filename', 'filedate', 'urldocument']]
 datafinal.index = range(len(datafinal))
