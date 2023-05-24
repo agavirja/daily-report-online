@@ -200,7 +200,9 @@ def valorizador(id_inmueble,inputvar={},currency='COP',currencycal=1):
             datasimilares = datasimilares[idd]
             datasimilares = datasimilares.sort_values(by=vardep,ascending=True)
             datasimilares['tipobusqueda'] = '<p2>Similares en la zona</p2>'
-            datacomparables               = datacomparables.append(datasimilares)
+            #datacomparables               = datacomparables.append(datasimilares)
+            datacomparables               = pd.concat([datacomparables,datasimilares])
+
         
         if datacomparables.empty is False:
             datacomparables = datacomparables[['code','direccion','tiponegocio','areaconstruida','habitaciones','banos','garajes','estrato','imagen_principal','valorventa','valorarriendo','tipobusqueda','latitud','longitud','fuente','url']]

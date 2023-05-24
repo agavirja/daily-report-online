@@ -99,7 +99,8 @@ def dashboard_gestion_callcenter_inbound(id_inmueble=None,modulo_callcenter=True
                 g['fecha']       = g['fecha'].apply(lambda x: x.strftime("%b-%y"))
                 g                = g[g['valor']>0]
                 g['grupo']       = 'Visitas'
-                bplot            = bplot.append(g)
+                #bplot            = bplot.append(g)
+                bplot            = pd.concat([bplot,g])
                 
                 if bplot.empty is False:
                     fig = px.bar(bplot, x='fecha', y='valor', barmode='group',color='grupo', text='valor', color_discrete_sequence=['#2166ac','#d6604d'])
@@ -169,7 +170,8 @@ def dashboard_gestion_callcenter_inbound(id_inmueble=None,modulo_callcenter=True
                         dfappend['id_inmueble'] = dfappend['id_inmueble'].astype(int).astype(str)
                         dfappend['grupo']       = 'Visitas'
                         
-                        df = df.append(dfappend)
+                        #df = df.append(dfappend)
+                        df = pd.concat([df,dfappend])
                         
                         if df.empty is False:
                             fig = px.bar(df, x='id_inmueble', y='count', barmode='group',color='grupo', text='count',color_discrete_sequence=['#2166ac','#d6604d'])
